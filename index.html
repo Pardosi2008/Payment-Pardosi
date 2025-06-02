@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pardosi Store - Metode Pembayaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Pardosi Store ⚡</h1>
+    </header>
+
+    <section class="description">
+      <p>Pardosi Store adalah penyedia layanan produk hosting terbaik, akun digital, dan layanan script bot berkualitas tinggi. Kami berkomitmen untuk memberikan harga terjangkau dengan jaminan kualitas dan kepuasan pelanggan sebagai prioritas utama. Tersedia layanan VPS, Panel Hosting, Domain, serta berbagai tool digital yang mendukung kebutuhan Anda.</p>
+    </section>
+
+    <section class="payment-methods">
+      <div class="method">
+        <h2>DANA</h2>
+        <p id="dana">085946999307</p>
+        <button onclick="copy('dana')">Salin Nomor</button>
+      </div>
+      <div class="method">
+        <h2>OVO</h2>
+        <p id="ovo">085946999307</p>
+        <button onclick="copy('ovo')">Salin Nomor</button>
+      </div>
+      <div class="method">
+        <h2>GOPAY</h2>
+        <p id="gopay">085946999307</p>
+        <button onclick="copy('gopay')">Salin Nomor</button>
+      </div>
+      <div class="method">
+        <h2>QRIS</h2>
+        <img src="qris.png" alt="QRIS Pardosi Store" class="qris-img">
+      </div>
+      <p class="note">NOTE: WAJIB SERTAKAN BUKTI TRANSFER</p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="column">
+          <h3>Tentang Kami</h3>
+          <p>Pardosi Store adalah penyedia layanan hosting, domain, panel, dan tools digital dengan jaminan garansi dan kualitas premium.</p>
+        </div>
+        <div class="column">
+          <h3>Produk Kami</h3>
+          <ul>
+            <li>VPS Digital</li>
+            <li>Akun Digital</li>
+            <li>Script Bot WhatsApp</li>
+            <li>Panel Hosting & Pterodactyl</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Kontak Kami</h3>
+          <p>WhatsApp: +62 859-4699-9307</p>
+          <p>Email: pardosi.store@gmail.com</p>
+          <p>Instagram: @pardosi.store</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2025 Pardosi Store. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function copy(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => alert('Nomor berhasil disalin: ' + text));
+    }
+  </script>
+</body>
+</html>
